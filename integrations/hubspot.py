@@ -15,7 +15,7 @@ from integrations.integration_item import IntegrationItem
 
 CLIENT_ID = 'ebc099b6-8f6d-4d22-92e7-129b399cc840'
 CLIENT_SECRET = 'd3be2ed7-4154-4c15-bdc2-cc1fe497d19c'
-REDIRECT_URI = 'http://localhost:8000/integrations/hubspot/oauth2callback'
+REDIRECT_URI = 'https://integrationbackend/integrations/hubspot/oauth2callback'
 SCOPE = 'crm.objects.contacts.read'
 
 async def authorize_hubspot(user_id, org_id):
