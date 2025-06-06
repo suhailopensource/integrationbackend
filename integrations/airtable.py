@@ -20,8 +20,8 @@ from redis_client import add_key_value_redis, get_value_redis, delete_key_redis
 CLIENT_ID = 'e6c8dd52-7603-4901-93b5-ffd1173771be'
 CLIENT_SECRET = '63e642132d8d14478e89a90434d91b8ac12ac6f18c49b25a9cc4d2dc7958e472'
 # REDIRECT_URI = 'http://localhost:8000/integrations/airtable/oauth2callback'
-REDIRECT_URI = 'https://integrationbackend/integrations/airtable/oauth2callback'
-authorization_url = f'https://airtable.com/oauth2/v1/authorize?client_id={CLIENT_ID}&response_type=code&owner=user&redirect_uri=https%3A%2F%2Fintegrationbackend%2Fintegrations%2Fairtable%2Foauth2callback'
+REDIRECT_URI = 'https://integrationbackend-ff4r.onrender.com/integrations/airtable/oauth2callback'
+authorization_url = f'https://airtable.com/oauth2/v1/authorize?client_id={CLIENT_ID}&response_type=code&owner=user&redirect_uri=https%3A%2F%2Fintegrationbackend-ff4r.onrender.com%2Fintegrations%2Fairtable%2Foauth2callback'
 
 encoded_client_id_secret = base64.b64encode(f'{CLIENT_ID}:{CLIENT_SECRET}'.encode()).decode()
 scope = 'data.records:read data.records:write data.recordComments:read data.recordComments:write schema.bases:read schema.bases:write'
